@@ -2,9 +2,9 @@
 
 Minimal demonstration of a full collider simulation and analysis chain:
 
-\[
+$$
 pp \to \mu^+ \mu^- \quad (\text{Drell–Yan})
-\]
+$$
 
 The repository shows how to generate events, simulate detector response, and reconstruct the invariant mass peak of the \( Z \) boson around \( 91\,\mathrm{GeV} \).
 
@@ -40,15 +40,15 @@ z_peak.pdf # Result plot (vector)
 
 The simulated process is the Drell–Yan mechanism:
 
-\[
+$$
 q\bar{q} \to \gamma^*/Z \to \mu^+ \mu^-
-\]
+$$
 
 Near \( \sqrt{\hat{s}} \approx m_Z \), the propagator produces a resonance described by a Breit–Wigner distribution:
 
-\[
+$$
 \frac{1}{(s - m_Z^2)^2 + m_Z^2 \Gamma_Z^2}
-\]
+$$
 
 which appears as the peak in the invariant mass distribution.
 
@@ -85,9 +85,9 @@ plot_zpeak("/path/to/tag_1_delphes_events.root");
 
 The macro reconstructs the dimuon invariant mass:
 
-\[
+$$
 m_{\mu\mu} = \sqrt{(p_{\mu^+} + p_{\mu^-})^2}
-\]
+$$
 
 Expected result:
 
